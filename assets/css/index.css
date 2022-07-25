@@ -561,9 +561,7 @@ body {
 @media screen and (min-width: 100px) and (max-width: 480px) {
   .aboutCards {
     display: grid;
-    grid-template-areas: " foto1" 
- " foto2" 
- " foto3";
+    grid-template-areas: " foto1"  " foto2"  " foto3";
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
     gap: 10px; }
@@ -593,9 +591,7 @@ body {
 @media screen and (min-width: 450px) and (max-width: 760px) {
   .aboutCards {
     display: grid;
-    grid-template-areas: " foto1" 
- " foto2" 
- " foto3";
+    grid-template-areas: " foto1"  " foto2"  " foto3";
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
     gap: 10px; }
