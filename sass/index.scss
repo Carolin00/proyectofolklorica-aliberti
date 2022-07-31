@@ -58,7 +58,7 @@
     margin-top: 15rem;    
 }
 
-.linesGeneral {
+.lines {
     height: 1px;
     width: 135px;
     background-color: #f3e8d488;
@@ -70,6 +70,12 @@
     margin-bottom: 8rem;
     position: relative;
     animation: lineaGral 3s ease;
+
+  &--escuchanos {
+    @extend .lines;
+    width: 110px;
+    margin-bottom: 7rem;
+  }
 }
 
 @keyframes lineaGral {
@@ -92,23 +98,6 @@
     top: $navGral_top;
     right: $navGral_desktop_right;
     z-index: 999999;
-}
-
-.menuHome {
-  justify-content: space-around;
-  padding-top: 2rem;
-  font-family: 'inter', serif;
-  font-weight: 600;
-  font-size: $navGral_desktop_fontSize;
-  text-transform: uppercase;
-  display: flex;
-  list-style: none;
-  gap: $navGral_desktop_gap;
-  position: absolute;
-  top: 4.5rem; 
-  right: $navGral_desktop_right; 
-  z-index: 999999;
-  cursor: pointer;  
 }
 
 /* ------------------------------- Fin elementos generales --------------------------*/
@@ -196,7 +185,7 @@
       list-style: none;
       font-family: 'inter', serif;
       font-weight: 600;
-      font-size: 1.5em;
+      font-size: $navGral_tablet_fontSize;
       text-transform: uppercase;
       gap: 30px;
       position: absolute;
@@ -326,15 +315,7 @@
   position: relative;
 } 
 
-.linesEscuchanos {
-  height: 1px;
-  width: 110px;
-  background-color: #f3e8d488;
-  display: block;
-  margin-bottom: 7rem;
-  position: relative;
-  animation: linea 3s ease;
-}
+
 
 @keyframes linea {
   0% {
@@ -487,7 +468,7 @@
       padding-top: 2rem;
       font-family: 'inter', serif;
       font-weight: 600;
-      font-size: 2.2em;
+      font-size: 2.4em;
       text-transform: uppercase;
       gap: 30px;
       position: absolute;
@@ -565,7 +546,7 @@
   position: relative;
 }
 
-.linesEscuchanos {
+.lines--escuchanos {
   height: 1px;
   width: 115px;
   background-color: #f3e8d488;
@@ -603,7 +584,7 @@
   gap: 18px;
   }
 
-  .linesEscuchanos {
+  .lines--escuchanos {
   height: 1px;
   width: 100px;
   background-color: #f3e8d488;

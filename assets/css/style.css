@@ -17,11 +17,11 @@ body {
   font-family: "inter", serif;
   color: #F3E8D4; }
 
-/*map*/
 .menuHome {
   display: flex;
   justify-content: space-around;
   padding-top: 2rem;
+  font-size: 2.6em;
   list-style: none;
   gap: 30px;
   position: absolute;
@@ -36,7 +36,6 @@ body {
   text-align: center;
   font-family: "inter", serif;
   font-weight: 600;
-  font-size: 1.5em;
   text-transform: uppercase;
   background-color: #363636;
   color: #F3E8D4;
@@ -99,7 +98,7 @@ body {
   margin-bottom: 6rem;
   margin-top: 15rem; }
 
-.linesGeneral {
+.lines, .lines--escuchanos {
   height: 1px;
   width: 135px;
   background-color: #f3e8d488;
@@ -111,6 +110,9 @@ body {
   margin-bottom: 8rem;
   position: relative;
   animation: lineaGral 3s ease; }
+  .lines--escuchanos {
+    width: 110px;
+    margin-bottom: 7rem; }
 
 @keyframes lineaGral {
   0% {
@@ -123,28 +125,12 @@ body {
   justify-content: space-around;
   padding-top: 2rem;
   list-style: none;
-  font-size: 1.5em;
+  font-size: 2.6em;
   gap: 30px;
   position: absolute;
   top: 4.5rem;
   right: 10rem;
   z-index: 999999; }
-
-.menuHome {
-  justify-content: space-around;
-  padding-top: 2rem;
-  font-family: 'inter', serif;
-  font-weight: 600;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  display: flex;
-  list-style: none;
-  gap: 30px;
-  position: absolute;
-  top: 4.5rem;
-  right: 10rem;
-  z-index: 999999;
-  cursor: pointer; }
 
 /* ------------------------------- Fin elementos generales --------------------------*/
 /*-------------------------------- HOME Mobile First --------------------------------*/
@@ -160,7 +146,7 @@ body {
     padding-top: 2rem;
     font-family: 'inter', serif;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 1.4em;
     text-transform: uppercase;
     display: flex;
     list-style: none;
@@ -212,7 +198,7 @@ body {
     list-style: none;
     font-family: 'inter', serif;
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1em;
     text-transform: uppercase;
     gap: 30px;
     position: absolute;
@@ -314,15 +300,6 @@ body {
   margin-top: 1rem;
   margin-bottom: 4rem;
   position: relative; }
-
-.linesEscuchanos {
-  height: 1px;
-  width: 110px;
-  background-color: #f3e8d488;
-  display: block;
-  margin-bottom: 7rem;
-  position: relative;
-  animation: linea 3s ease; }
 
 @keyframes linea {
   0% {
@@ -446,7 +423,7 @@ body {
     padding-top: 2rem;
     font-family: 'inter', serif;
     font-weight: 600;
-    font-size: 2.2em;
+    font-size: 2.4em;
     text-transform: uppercase;
     gap: 30px;
     position: absolute;
@@ -504,7 +481,7 @@ body {
     margin-top: 20rem;
     margin-bottom: 3rem;
     position: relative; }
-  .linesEscuchanos {
+  .lines--escuchanos {
     height: 1px;
     width: 115px;
     background-color: #f3e8d488;
@@ -534,7 +511,7 @@ body {
     height: 60px;
     background-color: #3d3c3c84;
     gap: 18px; }
-  .linesEscuchanos {
+  .lines--escuchanos {
     height: 1px;
     width: 100px;
     background-color: #f3e8d488;
@@ -616,13 +593,13 @@ body {
   .menuGral {
     display: flex;
     justify-content: space-around;
-    font-size: 1em;
+    font-size: 1.4em;
     padding-top: 2rem;
     list-style: none;
     gap: 11px;
     position: absolute;
     top: 4.5rem;
-    right: 1.2rem;
+    right: 2rem;
     z-index: 999999; }
   .aboutCards {
     display: grid;
@@ -663,7 +640,7 @@ body {
     gap: 11px;
     position: absolute;
     top: 4.5rem;
-    right: 1.2rem;
+    right: 2rem;
     z-index: 999999; }
   .aboutCards {
     display: grid;
