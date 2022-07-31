@@ -143,10 +143,10 @@ body {
     padding-top: 2rem;
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 17px;
     position: absolute;
     top: 4.5rem;
-    right: 3rem;
+    right: 2.7em;
     z-index: 999999;
     cursor: pointer; }
   .nav li {
@@ -156,7 +156,7 @@ body {
     text-align: center;
     font-family: 'inter', serif;
     font-weight: 600;
-    font-size: 1.8em;
+    font-size: 1.5em;
     text-transform: uppercase;
     background-color: #363636;
     color: #F3E8D4;
