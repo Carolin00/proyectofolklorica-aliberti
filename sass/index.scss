@@ -115,7 +115,7 @@
       gap: 17px;
       position: absolute;
       top: 4.5rem; 
-      right: 2.7em; 
+      right: 3rem; 
       z-index: 999999;
       cursor: pointer;  
 }
@@ -247,13 +247,17 @@
 .menuEscuchanos {
       display: flex;
       justify-content: space-around;      list-style: none;
-      gap: 20px;
+      gap: 11px;
       position: absolute;
       top: 4.5rem; 
-      right: 4rem; 
+      right: 1.2rem; 
       z-index: 999999;
       cursor: pointer; 
       padding-top: 2rem; 
+      font-family: 'inter', serif;
+      font-weight: 600;
+      font-size: 1.5em;
+      text-transform: uppercase;
 }
 
 .navEscuchanos li {
@@ -261,10 +265,6 @@
   flex-direction: column; 
   justify-content: center;
   text-align: center;
-  font-family: 'inter', serif;
-  font-weight: 600;
-  font-size: 1.1em;
-  text-transform: uppercase;
   background-color: #363636;
   color: #F3E8D4;
   text-decoration: none;
@@ -292,7 +292,7 @@
   font-family: 'inter', serif;
   align-items: center;
   font-weight: 100;
-  margin-top: 12rem;
+  margin-top: 15rem;
   margin-bottom: 4rem;
   position: relative;
 }
@@ -391,6 +391,9 @@
     display: flex;
     justify-content: space-around;
     list-style: none;
+    font-weight: 600;
+    font-size: 2.5em;
+    text-transform: uppercase;
     padding-top: 2rem;
     gap: 30px;
     position: absolute;
@@ -398,14 +401,10 @@
     right: 8rem; 
     z-index: 999999;
     cursor: pointer;
-}
+  }
 
 .navEscuchanos li {
     display: flex;
-    font-family: 'inter', serif;
-    font-weight: 600;
-    font-size: 2.5em;
-    text-transform: uppercase;
     background-color: #363636;
     color: #F3E8D4;
     text-decoration: none;
@@ -424,7 +423,7 @@
       font-family: 'inter', serif;
       align-items: center;
       font-weight: 100;
-      margin-top: 12rem;
+      margin-top: 20rem;
       margin-bottom: 5rem;
       position: relative;
   }
@@ -468,6 +467,10 @@
       justify-content: space-around;
       list-style: none;
       padding-top: 2rem;
+      font-family: 'inter', serif;
+      font-weight: 600;
+      font-size: $navGral_desktop_fontSize;
+      text-transform: uppercase;
       gap: 30px;
       position: absolute;
       top: 4.5rem; 
@@ -478,10 +481,6 @@
   
   .navEscuchanos li {
       display: flex;
-      font-family: 'inter', serif;
-      font-weight: 600;
-      font-size: 2.5em;
-      text-transform: uppercase;
       background-color: #363636;
       color: #F3E8D4;
       text-decoration: none;
@@ -532,7 +531,7 @@
   font-family: 'inter', serif;
   align-items: center;
   font-weight: 100;
-  margin-top: 12rem;
+  margin-top: 20rem;
   margin-bottom: 3rem;
   position: relative;
 }
@@ -543,7 +542,7 @@
   font-family: 'inter', serif;
   align-items: center;
   font-weight: 100;
-  margin-top: 12rem;
+  margin-top: 20rem;
   margin-bottom: 3rem;
   position: relative;
 }
@@ -690,7 +689,22 @@
   /*      -----------------------   SOBRE NOSOTRXS Responsive MOBILE --------------*/
 
   @media screen and (min-width:100px) and (max-width:480px) {
-      .aboutCards {
+      
+    .menuGral {
+      display: flex;
+      justify-content: space-around;
+      font-size: $navGral_mobile_fontSize;
+      padding-top: 2rem;
+      list-style: none;
+      gap: $navGral_gap;
+      position: absolute;
+      top: $navGral_top;
+      right: $navGral_right;
+      z-index: 999999;
+  }
+
+
+    .aboutCards {
           display: grid;
           grid-template-areas: 
           " foto1" 
@@ -736,6 +750,20 @@
   /* ------------------------------  SOBRE NOSOTROS Responsive TABLET ------------------*/
 
   @media screen and (min-width: 450px) and (max-width:760px) {
+
+    .menuGral {
+      display: flex;
+      justify-content: space-around;
+      font-size: $navGral_tablet_fontSize;
+      padding-top: 2rem;
+      list-style: none;
+      gap: $navGral_gap;
+      position: absolute;
+      top: $navGral_top;
+      right: $navGral_right;
+      z-index: 999999;
+  }
+
       .aboutCards {
           display: grid;
           grid-template-areas: 
