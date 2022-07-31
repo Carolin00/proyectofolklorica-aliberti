@@ -1,0 +1,14 @@
+@mixin flex($direction, $justify, $align) {
+        display: flex;
+        flex-direction: $direction;
+        justify-content: $justify;
+        align-items: $align;
+}
+
+
+/*map*/
+$fuentes-escuchanos:(
+    font_escuchanosDesc-mob: 2.3em,
+    font_escuchanosDesc-tab: 2.3em,
+    font_escuchanosDesc-des: 2.8em,
+)

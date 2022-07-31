@@ -1,6 +1,10 @@
-
+/*  Colores  */
+/* Fonts */
+/*lines*/
+/* nav general Mobile First */
+/* Nav general Tablet responsive */
+/* Nav general Desktop responsive */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 * {
   padding: 0;
   margin: 0;
@@ -13,6 +17,7 @@ body {
   font-family: "inter", serif;
   color: #F3E8D4; }
 
+/*map*/
 .menuHome {
   display: flex;
   justify-content: space-around;
@@ -80,7 +85,6 @@ body {
   left: 30rem;
   gap: 5px; }
 
-/* De aca para abajo es sin SASS */
 /*  ----------- Elementos generales -----------------*/
 .titlesGeneral {
   display: flex;
@@ -135,10 +139,8 @@ body {
     background-position: right;
     background-attachment: fixed; }
   .menuHome {
-    display: flex;
     justify-content: space-around;
-    padding-top: 2rem; }
-  .menuHome {
+    padding-top: 2rem;
     display: flex;
     list-style: none;
     gap: 20px;
@@ -189,8 +191,6 @@ body {
   .menuHome {
     display: flex;
     justify-content: space-around;
-    padding-top: 2rem; }
-  .menuHome {
     display: flex;
     list-style: none;
     gap: 30px;
@@ -198,7 +198,8 @@ body {
     top: 4.5rem;
     right: 8rem;
     z-index: 999999;
-    cursor: pointer; }
+    cursor: pointer;
+    padding-top: 2rem; }
   .nav li {
     font-family: 'inter', serif;
     font-weight: 600;
@@ -223,10 +224,10 @@ body {
     position: absolute;
     bottom: 20rem;
     left: 10rem; }
-  .home__title--background {
-    background-color: #363636;
-    display: table;
-    padding: 0.02rem; }
+    .home__title--background {
+      background-color: #363636;
+      display: table;
+      padding: 0.02rem; }
   .homeRedes ul {
     display: flex;
     justify-content: center;
@@ -243,17 +244,14 @@ body {
 .menuEscuchanos {
   display: flex;
   justify-content: space-around;
-  padding-top: 2rem; }
-
-.menuEscuchanos {
-  display: flex;
   list-style: none;
   gap: 20px;
   position: absolute;
   top: 4.5rem;
   right: 4rem;
   z-index: 999999;
-  cursor: pointer; }
+  cursor: pointer;
+  padding-top: 2rem; }
 
 .navEscuchanos li {
   display: flex;
@@ -366,6 +364,27 @@ body {
 /*--------------------------------  Fin ESCUCHANOS Mobile First ------------------------    */
 /*    ---------------------------  ESCUCHANOS Responsive TABLET-------------------    */
 @media screen and (min-width: 617px) and (max-width: 1280px) {
+  .menuEscuchanos {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-top: 2rem;
+    gap: 30px;
+    position: absolute;
+    top: 4.5rem;
+    right: 8rem;
+    z-index: 999999;
+    cursor: pointer; }
+  .navEscuchanos li {
+    display: flex;
+    font-family: 'inter', serif;
+    font-weight: 600;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    background-color: #363636;
+    color: #F3E8D4;
+    text-decoration: none;
+    padding: 0.1rem; }
   .contenedorGeneral {
     display: flex;
     flex-direction: column;
@@ -390,7 +409,7 @@ body {
     position: relative; }
   .escuchanos__description {
     color: #F3E8D4;
-    font-size: 2.8em;
+    font-size: 2.6em;
     font-family: 'inter', serif;
     text-align: center;
     font-weight: 100;
@@ -407,10 +426,8 @@ body {
   .menuEscuchanos {
     display: flex;
     justify-content: space-around;
-    padding-top: 2rem; }
-  .menuEscuchanos {
-    display: flex;
     list-style: none;
+    padding-top: 2rem;
     gap: 30px;
     position: absolute;
     top: 4.5rem;
@@ -480,7 +497,7 @@ body {
     position: relative; }
   .escuchanos__description {
     color: #F3E8D4;
-    font-size: 2.6em;
+    font-size: 2.8em;
     width: 600px;
     font-family: 'inter', serif;
     text-align: center;
@@ -536,7 +553,7 @@ body {
 
 .aboutText__parrafo {
   color: #F3E8D4;
-  font-size: 1.9rem;
+  font-size: 3em;
   font-family: 'inter', serif;
   font-weight: 100;
   margin-bottom: 3rem;
@@ -582,9 +599,7 @@ body {
 @media screen and (min-width: 100px) and (max-width: 480px) {
   .aboutCards {
     display: grid;
-    grid-template-areas: " foto1" 
- " foto2" 
- " foto3";
+    grid-template-areas: " foto1"  " foto2"  " foto3";
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
     gap: 10px; }
@@ -603,7 +618,7 @@ body {
     margin-right: 2rem; }
   .aboutText__parrafo {
     color: #F3E8D4;
-    font-size: 1.5rem;
+    font-size: 2.4em;
     font-family: 'inter', serif;
     font-weight: 100;
     margin-bottom: 3rem;
@@ -614,9 +629,7 @@ body {
 @media screen and (min-width: 450px) and (max-width: 760px) {
   .aboutCards {
     display: grid;
-    grid-template-areas: " foto1" 
- " foto2" 
- " foto3";
+    grid-template-areas: " foto1"  " foto2"  " foto3";
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
     gap: 10px; }
@@ -635,7 +648,7 @@ body {
     margin-right: 3rem; }
   .aboutText__parrafo {
     color: #F3E8D4;
-    font-size: 1.9rem;
+    font-size: 2.6em;
     font-family: 'inter', serif;
     font-weight: 100;
     margin-bottom: 3rem;
@@ -659,8 +672,12 @@ body {
 .section_tablaEntradas {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  /*display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;*/
   align-content: center;
   margin: auto;
   position: relative; }

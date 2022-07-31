@@ -2,6 +2,7 @@
 @import './misc/normalize';
 
 
+@import './misc/mixins';
 @import './partials/header';
 
 .home__image--background {
@@ -41,8 +42,6 @@
 }
 }
 
-
-/* De aca para abajo es sin SASS */
 
                         /*  ----------- Elementos generales -----------------*/ 
 
@@ -95,10 +94,6 @@
     z-index: 999999;
 }
 
-.menuGral {
-
-}
-
 /* ------------------------------- Fin elementos generales --------------------------*/
 
 /*-------------------------------- HOME Mobile First --------------------------------*/
@@ -112,13 +107,10 @@
     background-position: right;
     background-attachment: fixed; }
 
+  
   .menuHome {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 2rem;
-}
-
-  .menuHome {
+    justify-content: space-around;
+    padding-top: 2rem;
       display: flex;
       list-style: none;
       gap: 20px;
@@ -179,13 +171,10 @@
 /* ------------------------------- HOME Responsive Tablet  -------------------------------*/
 
 @media screen and (min-width:571px) and (max-width: 974px) {
+
   .menuHome {
       display: flex;
       justify-content: space-around;
-      padding-top: 2rem;
-  }
-  
-  .menuHome {
       display: flex;
       list-style: none;
       gap: 30px;
@@ -194,6 +183,7 @@
       right: 8rem; 
       z-index: 999999;
       cursor: pointer;
+      padding-top: 2rem;
   }
 
   
@@ -229,13 +219,13 @@
   position: absolute;
   bottom: 20rem;
   left: 10rem;
-}
 
-.home__title--background {
+    &--background {
   background-color: #363636;
   display: table;
   padding: 0.02rem;
 }  
+}
 
 .homeRedes ul {
     display: flex;
@@ -254,21 +244,17 @@
 
 /*-------------------------------- Escuchanos Mobile First ---------------------------*/
 
-.menuEscuchanos {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 2rem;
-}
 
 .menuEscuchanos {
       display: flex;
-      list-style: none;
+      justify-content: space-around;      list-style: none;
       gap: 20px;
       position: absolute;
       top: 4.5rem; 
       right: 4rem; 
       z-index: 999999;
-      cursor: pointer;  
+      cursor: pointer; 
+      padding-top: 2rem; 
 }
 
 .navEscuchanos li {
@@ -344,7 +330,7 @@
 
 .escuchanos__description {
   color: #F3E8D4;
-  font-size: 2.3em;
+  font-size: $font_escuchanosDescription-mobile;
   font-family: 'inter', serif;
   text-align: center;
   font-weight: 100;
@@ -402,6 +388,31 @@
 
 @media screen and (min-width:617px) and (max-width: 1280px) {
 
+  .menuEscuchanos {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-top: 2rem;
+    gap: 30px;
+    position: absolute;
+    top: 4.5rem; 
+    right: 8rem; 
+    z-index: 999999;
+    cursor: pointer;
+}
+
+.navEscuchanos li {
+    display: flex;
+    font-family: 'inter', serif;
+    font-weight: 600;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    background-color: #363636;
+    color: #F3E8D4;
+    text-decoration: none;
+    padding: 0.1rem;
+}
+
   .contenedorGeneral {
       display: flex;
       flex-direction: column;
@@ -432,7 +443,7 @@
       
   .escuchanos__description {
       color: #F3E8D4;
-      font-size: 2.8em;
+      font-size: $font_escuchanosDescription-tablet;
       font-family: 'inter', serif;
       text-align: center;
       font-weight: 100;
@@ -452,16 +463,12 @@
 /*-------------------------------------ESCUCHANOS responsive DESKTOP ----------------------------------------*/
 
 @media screen and (min-width:1281px) and (max-width: 1900px) {
-  
-  .menuEscuchanos {
-      display: flex;
-      justify-content: space-around;
-      padding-top: 2rem;
-  }
 
   .menuEscuchanos {
       display: flex;
+      justify-content: space-around;
       list-style: none;
+      padding-top: 2rem;
       gap: 30px;
       position: absolute;
       top: 4.5rem; 
@@ -553,7 +560,7 @@
 
 .escuchanos__description {
   color: #F3E8D4;
-  font-size: 2.6em;
+  font-size: map-get($fuentes-escuchanos, font_escuchanosDesc-des);
   width: 600px;
   font-family: 'inter', serif;
   text-align: center;
@@ -617,6 +624,7 @@
       flex-direction: column;
       align-items: center;
   }
+
   .aboutText {
       width: 100%;
       position: relative;
@@ -628,7 +636,7 @@
 
   .aboutText__parrafo {
       color: #F3E8D4;
-      font-size: 1.9rem;
+      font-size: $font_sobreNosotrxs-desktop;
       font-family: 'inter', serif;
       font-weight: 100;
       margin-bottom: 3rem;
@@ -717,7 +725,7 @@
       
       .aboutText__parrafo { 
       color: #F3E8D4;
-      font-size: 1.5rem;
+      font-size: $font_sobreNosotrxs-mobile;
       font-family: 'inter', serif;
       font-weight: 100;
       margin-bottom: 3rem;
@@ -763,7 +771,7 @@
       
       .aboutText__parrafo { 
       color: #F3E8D4;
-      font-size: 1.9rem;
+      font-size: $font_sobreNosotrxs-tablet;
       font-family: 'inter', serif;
       font-weight: 100;
       margin-bottom: 3rem;
@@ -792,10 +800,11 @@
   }   
   
   .section_tablaEntradas {
-      display: flex;
+      @include flex(column, center, center);
+      /*display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: center;*/
       align-content: center;
       margin: auto;
       position: relative;
