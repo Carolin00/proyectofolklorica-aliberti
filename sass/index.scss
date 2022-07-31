@@ -86,11 +86,29 @@
     justify-content: space-around;
     padding-top: 2rem;
     list-style: none;
+    font-size: $navGral_desktop_fontSize;
     gap: $navGral_desktop_gap;
     position: absolute;
     top: $navGral_top;
     right: $navGral_desktop_right;
     z-index: 999999;
+}
+
+.menuHome {
+  justify-content: space-around;
+  padding-top: 2rem;
+  font-family: 'inter', serif;
+  font-weight: 600;
+  font-size: $navGral_desktop_fontSize;
+  text-transform: uppercase;
+  display: flex;
+  list-style: none;
+  gap: $navGral_desktop_gap;
+  position: absolute;
+  top: 4.5rem; 
+  right: $navGral_desktop_right; 
+  z-index: 999999;
+  cursor: pointer;  
 }
 
 /* ------------------------------- Fin elementos generales --------------------------*/
@@ -110,11 +128,15 @@
   .menuHome {
       justify-content: space-around;
       padding-top: 2rem;
+      font-family: 'inter', serif;
+      font-weight: 600;
+      font-size: $navGral_mobile_fontSize;
+      text-transform: uppercase;
       display: flex;
       list-style: none;
       gap: 17px;
       position: absolute;
-      top: 4.5rem; 
+      top: $navGral_top; 
       right: 3rem; 
       z-index: 999999;
       cursor: pointer;  
@@ -125,10 +147,6 @@
   flex-direction: column; 
   justify-content: center;
   text-align: center;
-  font-family: 'inter', serif;
-  font-weight: 600;
-  font-size: 1.5em;
-  text-transform: uppercase;
   background-color: #363636;
   color: #F3E8D4;
   text-decoration: none;
@@ -176,6 +194,10 @@
       justify-content: space-around;
       display: flex;
       list-style: none;
+      font-family: 'inter', serif;
+      font-weight: 600;
+      font-size: 1.5em;
+      text-transform: uppercase;
       gap: 30px;
       position: absolute;
       top: 4.5rem; 
@@ -187,10 +209,6 @@
 
   
 .nav li {
-  font-family: 'inter', serif;
-  font-weight: 600;
-  font-size: 2em;
-  text-transform: uppercase;
   background-color: #363636;
   color: #F3E8D4;
   text-decoration: none;
@@ -392,7 +410,7 @@
     justify-content: space-around;
     list-style: none;
     font-weight: 600;
-    font-size: 2.5em;
+    font-size: 2.4em;
     text-transform: uppercase;
     padding-top: 2rem;
     gap: 30px;
@@ -469,7 +487,7 @@
       padding-top: 2rem;
       font-family: 'inter', serif;
       font-weight: 600;
-      font-size: $navGral_desktop_fontSize;
+      font-size: 2.2em;
       text-transform: uppercase;
       gap: 30px;
       position: absolute;
@@ -693,7 +711,7 @@
     .menuGral {
       display: flex;
       justify-content: space-around;
-      font-size: $navGral_mobile_fontSize;
+      font-size:$navGral_mobile_fontSize;
       padding-top: 2rem;
       list-style: none;
       gap: $navGral_gap;
@@ -702,7 +720,6 @@
       right: $navGral_right;
       z-index: 999999;
   }
-
 
     .aboutCards {
           display: grid;
