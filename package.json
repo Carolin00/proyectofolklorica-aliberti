@@ -1,7 +1,7 @@
 {
   "name": "proyectofolklorica-aliberti-sass",
   "version": "1.0.0",
-  "description": "Entrega SASS",
+  "description": "Pagina creada con html, css y sass para la banda Proyecto Folklorica. En esta version de la entrega agregue mas keywords y sume algun otro codigo sass.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
