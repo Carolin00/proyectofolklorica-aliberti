@@ -1,0 +1,133 @@
+  /* -----------------------------      ENTRADAS Mobile First       --------------------------*/
+
+.entradas__background {
+    background-image: url(../img/banner-home.jpg);   
+    background-size: cover;
+    background-color: rgba(48, 48, 48, 0.671);
+    background-blend-mode: soft-light;  
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.main__height {
+    height: 68vh;
+}   
+
+.section_tablaEntradas {
+    @include flex(column, center, center);
+    align-content: center;
+    margin: auto;
+    position: relative;
+}
+
+th, td {
+    width: 220px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.entradasTabla {
+    margin-left: 8rem;
+}
+
+.entradasTabla__font {
+    font-family: 'inter', serif;
+    font-weight: 200;
+    font-size: 2.4em;
+    color: #F3E8D4;
+}
+
+.entradasTabla__date {
+    width: 180px;
+}
+
+.entradasTabla__button {
+width: 87px;
+padding: 3px;
+font-family: 'inter', serif;
+color: #F3E8D4;
+font-weight: 200;
+height: 24px;
+font-size: 0.7em;
+border-radius: 12px;
+background-color: transparent;
+border: 1px solid #fdf6ec92;
+}
+
+.footerEntradas ul {
+    position: relative;
+    display: flex;  
+    justify-content: center;
+    align-items: center; 
+    list-style: none;
+    width: 100%;
+    height: 60px;   
+    background-color: #3d3c3c84;
+    gap: 18px;
+}
+
+/* -------------------------------- Fin ENTRADAS Mobile First  --------------------*/
+
+/* ------------------------------- ENTRADAS Responsive TABLET  -------------------*/
+
+@media screen and (min-width:571px) and (max-width: 974px) {
+    .entradasTabla__font {
+        font-size: 3em;
+    }
+
+    .entradasTabla__button {
+        width: 90px;
+        padding: 4px;
+        height: 26px;
+        font-size: 0.7em; 
+}   
+
+    .main__height {
+        height: 75vh;
+    }   
+}
+
+    /*------------------------------ Fin ENTRADAS Responsive TABLET ---------------------*/
+
+    /* ------------------------------- ENTRADAS Responsive DESKTOP  -------------------*/
+
+@media screen and (min-width:975px) and (max-width: 1800px) {
+
+    .section_tablaEntradas {
+        margin-left: 0;
+    }
+
+    .entradasTabla__font {
+        font-size: 3em;
+    }
+
+    .entradasTabla__button {
+        width: 90px;
+        padding: 4px;
+        height: 26px;
+        font-size: 0.7em;
+        }
+
+    .entradasTabla__date {
+        width: 170px;
+    }
+
+    .entradasTabla__lugar {
+        width: 205px;
+    }
+
+    th, td {
+        width: 170px;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    .main__height {
+        height: 72.3vh;
+        }    
+}
+
+/* ---------------------------------  Fin ENTRADAS Responsive Desktop ---------------------------*/
+
+                                    /*  Fin seccion ENTRADAS  */

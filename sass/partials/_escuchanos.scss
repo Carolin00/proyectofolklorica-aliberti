@@ -1,0 +1,254 @@
+/*-------------------------------- Escuchanos Mobile First ---------------------------*/
+
+.titleSpotify {
+color: #F3E8D4;
+font-size: 5em;
+font-family: 'inter', serif;
+align-items: center;
+font-weight: 100;
+margin-top: 15rem;
+margin-bottom: 4rem;
+position: relative;
+}
+
+.titleYoutube {
+color: #F3E8D4;
+font-size: 5em;
+font-family: 'inter', serif;
+align-items: center;
+font-weight: 100;
+margin-top: 1rem;
+margin-bottom: 4rem;
+position: relative;
+} 
+
+
+
+@keyframes linea {
+0% {
+    width: 1px;
+}
+100% {
+    width: 110px;
+}
+}
+
+.escuchanos__description {
+color: #F3E8D4;
+font-size: $font_escuchanosDescription-mobile;
+font-family: 'inter', serif;
+text-align: center;
+font-weight: 100;
+margin-bottom: 4rem;
+margin-right: 2rem;
+margin-left: 2rem;
+}
+
+.iframes {
+height: 260px;
+width: 345px;
+bottom: 15vh;
+margin-bottom: 9rem;
+border-radius: 12px;
+}
+
+.contenedorGeneral {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.contenedorIzq {
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 100%;
+background: linear-gradient(180deg, rgba(12,13,23,1) 0%, rgba(24,25,47,1) 63%, rgba(78,46,37,1) 100%);
+}
+
+.contenedorDer {
+display: flex;
+flex-direction: column;
+align-items: center;
+background: linear-gradient(0deg, rgba(12,13,23,1) 0%, rgba(24,25,47,1) 63%, rgba(78,46,37,1) 100%);
+height: 100%;
+}
+
+.footerEscuchanos ul { 
+position: relative;
+bottom: 0px;
+display: inline-flex;  
+justify-content: center;
+align-items: center;
+list-style: none;
+width: 100%;
+height: 60px;   
+background-color: #3d3c3c84;
+gap: 18px;
+}
+
+/*--------------------------------  Fin ESCUCHANOS Mobile First ------------------------    */
+
+/*    ---------------------------  ESCUCHANOS Responsive TABLET-------------------    */
+
+@media screen and (min-width:617px) and (max-width: 1280px) {
+
+.contenedorGeneral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleSpotify {
+    color: #F3E8D4;
+    font-size: 5em;
+    font-family: 'inter', serif;
+    align-items: center;
+    font-weight: 100;
+    margin-top: 20rem;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.titleYoutube {
+    color: #F3E8D4;
+    font-size: 5em;
+    font-family: 'inter', serif;
+    align-items: center;
+    font-weight: 100;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    position: relative;
+}
+    
+.escuchanos__description {
+    color: #F3E8D4;
+    font-size: $font_escuchanosDescription-tablet;
+    font-family: 'inter', serif;
+    text-align: center;
+    font-weight: 100;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.iframes {
+    height: 380px;
+    width: 700px;
+    border-radius: 12px;
+    }
+}
+
+/*-----------------------------------   Fin ESCUCHANOS responsive tablet  ----------------------------------*/
+
+/*-------------------------------------ESCUCHANOS responsive DESKTOP ----------------------------------------*/
+
+@media screen and (min-width:1281px) and (max-width: 1900px) {
+
+.contenedorGeneral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 900px;
+}
+
+.contenedorIzq {
+display: flex;
+flex-direction: column;
+width: 50%;
+height: 900px;
+position: absolute;
+left: 0%;
+}
+
+.contenedorDer {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 50%; 
+height: 900px;
+position: absolute;
+right: 0%;
+background: linear-gradient(0deg, rgba(12,13,23,1) 0%, rgba(24,25,47,1) 63%, rgba(78,46,37,1) 100%);
+}
+
+.titleSpotify {
+color: #F3E8D4;
+font-size: 4.5em;
+font-family: 'inter', serif;
+align-items: center;
+font-weight: 100;
+margin-top: 20rem;
+margin-bottom: 3rem;
+position: relative;
+}
+
+.titleYoutube {
+color: #F3E8D4;
+font-size: 4.5em;
+font-family: 'inter', serif;
+align-items: center;
+font-weight: 100;
+margin-top: 20rem;
+margin-bottom: 3rem;
+position: relative;
+}
+
+.lines--escuchanos {
+height: 1px;
+width: 115px;
+background-color: #f3e8d488;
+display: block;
+margin-bottom: 7rem;
+position: relative;
+}
+
+.escuchanos__description {
+color: #F3E8D4;
+font-size: map-get($fuentes-escuchanos, font_escuchanosDesc-des);
+width: 600px;
+font-family: 'inter', serif;
+text-align: center;
+font-weight: 100;
+margin-bottom: 8rem;
+}
+
+.iframes {
+height: 300px;
+width: 600px;
+border-radius: 12px;
+}
+
+
+.lines--escuchanos {
+height: 1px;
+width: 100px;
+background-color: #f3e8d488;
+display: block;
+margin-bottom: 7rem;
+position: relative;
+animation: linea 3s ease;
+}
+
+@keyframes linea {
+0% {
+    width: 1px;
+}
+100% {
+    width: 100px;
+}
+}   
+
+.footerEscuchanos ul {
+    position: absolute;
+    bottom: 0px;
+    display: inline-flex;  
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    height: 60px;   
+    background-color: #3d3c3c84;
+    gap: 18px;
+    }
+
+}

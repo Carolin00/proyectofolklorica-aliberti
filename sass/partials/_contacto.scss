@@ -1,0 +1,93 @@
+  /*  -------------------------------- CONTACTO Mobile First   ------------------------------------*/
+
+  .contenedorForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    margin: auto;
+    margin-bottom: 5rem;
+    height: 48vh;
+}
+
+.formCampos {
+    display: block;
+    width: 300px;
+    height: 23px;
+    background-color: transparent;
+    border: 1px solid #fdf6ec92;
+    border-radius: 14px;
+    padding: 5px;
+    font-family: 'inter', serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #F3E8D4;
+}
+
+.message {
+height: 220px;
+background-color: transparent;
+border-radius: 15px;
+}
+
+.formBoton {
+    width: 90px;
+    padding: 5px;
+    font-family: 'inter', serif;
+    font-weight: 100;
+    font-size: 1.5em;
+    color: #F3E8D4;
+    border-radius: 8px; 
+}
+
+.footerContacto ul {    
+    position: relative;
+    bottom: 0px;
+    display: inline-flex;  
+    justify-content: center;
+    align-items: center; 
+    list-style: none;
+    width: 100%;
+    height: 60px;   
+    background-color: #3d3c3c84;
+    gap: 18px;
+}
+
+.formBoton:hover {
+    width: 90px;
+    padding: 5px;
+    font-family: 'inter', serif;
+    font-weight: 100;
+    font-size: 1.5em;
+    color: #F3E8D4;
+    background-color: #f3e8d425;
+    border-radius: 8px;
+}
+
+/*  -------------------------------- Fin CONTACTO Mobile First   ------------------------------------*/
+
+/*  -------------------------------- CONTACTO Responsive Tablet  ------------------------------------*/
+
+@media screen and (min-width:571px) and (max-width: 974px) {
+
+    .titlesGeneral {
+        font-size: 4.5em;
+    }
+
+    
+    .contenedorForm {
+    height: 58vh;
+}
+}
+    @media screen and (min-width:975px) and (max-width: 1800px) {
+
+    .formCampos {
+        font-size: 1.9em;
+    }
+
+    .formBoton:hover {
+        font-size: 1.9em;
+    }
+}

@@ -1,0 +1,53 @@
+
+/* Menu general Desktop */
+
+.menuGral {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;  
+    list-style: none;
+    font-size: $navGral_desktop_fontSize;
+    gap: $navGral_desktop_gap;
+    position: absolute;
+    top: $navGral_top;
+    right: $navGral_desktop_right;
+    z-index: 999999;
+}
+
+
+/*Mobile first Nav general */
+
+@media screen and (min-width:100px) and (max-width:480px) {
+                    
+    .menuGral {
+        display: flex;
+        justify-content: space-around;
+        font-size: $navGral_mobile_fontSize;
+        padding-top: 2rem;
+        list-style: none;
+        gap: $navGral_gap;
+        position: absolute;
+        top: $navGral_top;
+        right: $navGral_right;
+        z-index: 999999;
+    }
+}
+
+/*Responsive tablet Menu general */
+
+@media screen and (min-width: 450px) and (max-width:760px) {
+            
+    .menuGral {
+        display: flex;
+        justify-content: space-around;
+        font-size: $navGral_tablet_fontSize;
+        padding-top: 2rem;
+        list-style: none;
+        gap: $navGral_gap;
+        position: absolute;
+        top: $navGral_top;
+        right: $navGral_tablet_right;
+        z-index: 999999;
+    }
+}
+
