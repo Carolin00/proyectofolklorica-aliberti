@@ -104,14 +104,14 @@
         grid-area: foto1;
         width: 270px;
         height: 200px;
-        background-image: url(/assets/img/brensmall.jpg);
+        background-image: url(../../assets/img/brensmall.jpg);
         background-size: cover;
     }
                 
     .box__jaco {
         grid-area: foto2;
         width: 270px;
-        background-image: url(/assets/img/jacosmall.jpg);
+        background-image: url(../../assets/img/jacosmall.jpg);
         background-size: cover; 
     }
                 
@@ -119,7 +119,7 @@
         grid-area: foto3;
         width: 270px;
         height: 200px;
-        background-image: url(/assets/img/cocomall.jpg);
+        background-image: url(../../assets/img/cocomall.jpg);
         background-size: cover; 
     }
 
