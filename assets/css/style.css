@@ -4,6 +4,7 @@
 /* nav general Mobile First */
 /* Nav general Tablet */
 /* Nav general Desktop */
+/* Pagina Escuchanos */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
@@ -72,7 +73,20 @@ body {
   margin-bottom: 6rem;
   margin-top: 15rem; }
 
-.lines, .lines--escuchanos {
+.lines, .lines--contacto--escuchanos, .lines--entradas--escuchanos {
+  height: 1px;
+  width: 135px;
+  background-color: #f3e8d488;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+  position: relative;
+  animation: lineaGral 3s ease; }
+
+.lines--contacto, .lines--entradas {
   height: 1px;
   width: 135px;
   background-color: #f3e8d488;
@@ -84,7 +98,7 @@ body {
   margin-bottom: 8rem;
   position: relative;
   animation: lineaGral 3s ease; }
-  .lines--escuchanos {
+  .lines--contacto--escuchanos, .lines--entradas--escuchanos {
     width: 110px;
     margin-bottom: 7rem; }
 
@@ -97,13 +111,14 @@ body {
 /* ------------------------------- Fin elementos generales --------------------------*/
 /*----------------------------------      FOOTER General        -----------------------*/
 .footer ul {
-  position: relative;
-  bottom: 0px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   list-style: none;
-  width: 100%;
   height: 60px;
   background-color: #3d3c3c84;
   gap: 18px; }
@@ -402,12 +417,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 900px; }
+    height: 1000px; }
   .contenedorIzq {
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 900px;
+    height: 1000px;
     position: absolute;
     left: 0%; }
   .contenedorDer {
@@ -415,7 +430,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 50%;
-    height: 900px;
+    height: 1000px;
     position: absolute;
     right: 0%;
     background: linear-gradient(0deg, #0c0d17 0%, #18192f 63%, #4e2e25 100%); }
@@ -470,8 +485,9 @@ body {
     100% {
       width: 100px; } }
   .footerEscuchanos ul {
-    position: absolute;
-    bottom: 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -572,6 +588,7 @@ body {
 .box__jaco {
   grid-area: foto2;
   width: 270px;
+  height: 200px;
   background-image: url(../img/jacosmall.jpg);
   background-size: cover; }
 
@@ -591,13 +608,13 @@ body {
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
     gap: 10px; }
-  .aboutBox1__img {
+  .box__brenda {
     grid-area: foto1;
     max-width: auto; }
-  .aboutBox2__img {
+  .box__jaco {
     grid-area: foto2;
     max-width: auto; }
-  .aboutBox3__img {
+  .box__coco {
     grid-area: foto3;
     max-width: auto; }
   .divParrafo {

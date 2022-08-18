@@ -148,14 +148,14 @@ gap: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 900px;
+    height: $contenedor_escuchanos_height;
 }
 
 .contenedorIzq {
 display: flex;
 flex-direction: column;
 width: 50%;
-height: 900px;
+height: $contenedor_escuchanos_height;
 position: absolute;
 left: 0%;
 }
@@ -165,7 +165,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 width: 50%; 
-height: 900px;
+height: $contenedor_escuchanos_height;
 position: absolute;
 right: 0%;
 background: linear-gradient(0deg, rgba(12,13,23,1) 0%, rgba(24,25,47,1) 63%, rgba(78,46,37,1) 100%);
@@ -239,8 +239,9 @@ animation: linea 3s ease;
 }   
 
 .footerEscuchanos ul {
-    position: absolute;
-    bottom: 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     display: inline-flex;  
     justify-content: center;
     align-items: center;

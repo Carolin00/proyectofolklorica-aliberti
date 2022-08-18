@@ -111,7 +111,9 @@
     .box__jaco {
         grid-area: foto2;
         width: 270px;
-        background-image: url(../img/jacosmall.jpg);   background-size: cover; 
+        height: 200px;
+        background-image: url(../img/jacosmall.jpg);  
+        background-size: cover; 
     }
                 
     .box__coco {
@@ -142,17 +144,17 @@
         gap: 10px;
     }
                     
-    .aboutBox1__img {
+    .box__brenda {
         grid-area: foto1;            
         max-width: auto;       
     }
                     
-    .aboutBox2__img {
+    .box__jaco {
         grid-area: foto2;
         max-width: auto;
     }
                     
-    .aboutBox3__img {
+    .box__coco {
         grid-area: foto3;
         max-width: auto;
     }
