@@ -73,7 +73,7 @@ body {
   margin-bottom: 6rem;
   margin-top: 15rem; }
 
-.lines, .lines--contacto--escuchanos, .lines--entradas--escuchanos {
+.lines, .lines--contacto, .lines--entradas {
   height: 1px;
   width: 135px;
   background-color: #f3e8d488;
@@ -86,7 +86,7 @@ body {
   position: relative;
   animation: lineaGral 3s ease; }
 
-.lines--contacto, .lines--entradas {
+.lines, .lines--contacto, .lines--entradas {
   height: 1px;
   width: 135px;
   background-color: #f3e8d488;
@@ -98,10 +98,43 @@ body {
   margin-bottom: 8rem;
   position: relative;
   animation: lineaGral 3s ease; }
-  .lines--contacto--escuchanos, .lines--entradas--escuchanos {
+  .lines--contacto {
     width: 110px;
     margin-bottom: 7rem; }
 
+.lines--escuchanos {
+  height: 1px;
+  width: 90px;
+  background-color: #f3e8d488;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 8rem;
+  position: relative;
+  animation: lineaGral 3s ease; }
+
+/*
+--contacto .lines--entradas, .lines--escuchanos {
+  height: 1px;
+  width: 135px;
+  background-color: #f3e8d488;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 8rem;
+  position: relative;
+  animation: lineaGral 3s ease;
+
+  /*&--escuchanos {
+    @extend .lines;
+    width: 110px;
+    margin-bottom: 7rem;
+  }
+}*/
 @keyframes lineaGral {
   0% {
     width: 1px; }
@@ -318,7 +351,34 @@ body {
   margin-bottom: 4rem;
   position: relative; }
 
-@keyframes linea {
+.lines--escuchanos {
+  height: 1px;
+  width: 90px;
+  background-color: #f3e8d488;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 8rem;
+  position: relative;
+  animation: lineaGral 3s ease; }
+
+/*.lines--escuchanos {
+    height: 1px;
+    width: 135px;
+    background-color: #f3e8d488;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 8rem;
+    position: relative;
+    animation: lineaGral 3s ease;
+}
+*/
+@keyframes lineaGral {
   0% {
     width: 1px; }
   100% {
@@ -452,13 +512,6 @@ body {
     margin-top: 20rem;
     margin-bottom: 3rem;
     position: relative; }
-  .lines--escuchanos {
-    height: 1px;
-    width: 115px;
-    background-color: #f3e8d488;
-    display: block;
-    margin-bottom: 7rem;
-    position: relative; }
   .escuchanos__description {
     color: #F3E8D4;
     font-size: 2.8em;
@@ -473,10 +526,14 @@ body {
     border-radius: 12px; }
   .lines--escuchanos {
     height: 1px;
-    width: 100px;
+    width: 110px;
     background-color: #f3e8d488;
-    display: block;
-    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 8rem;
     position: relative;
     animation: linea 3s ease; }
   @keyframes linea {

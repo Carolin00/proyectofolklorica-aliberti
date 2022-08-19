@@ -28,7 +28,7 @@
     animation: lineaGral 3s ease;
 }
 
-.lines--contacto, .lines--entradas {
+.lines {
   height: 1px;
   width: 135px;
   background-color: #f3e8d488;
@@ -41,12 +41,51 @@
   position: relative;
   animation: lineaGral 3s ease;
 
-  &--escuchanos {
+  &--contacto {
     @extend .lines;
     width: 110px;
     margin-bottom: 7rem;
   }
+  &--entradas {
+    @extend .lines;
+  }
+
 }
+
+.lines--escuchanos {
+  height: 1px;
+  width: 90px;
+  background-color: #f3e8d488;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 8rem;
+  position: relative;
+  animation: lineaGral 3s ease;
+
+}
+/*
+--contacto .lines--entradas, .lines--escuchanos {
+  height: 1px;
+  width: 135px;
+  background-color: #f3e8d488;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 8rem;
+  position: relative;
+  animation: lineaGral 3s ease;
+
+  /*&--escuchanos {
+    @extend .lines;
+    width: 110px;
+    margin-bottom: 7rem;
+  }
+}*/
 
 @keyframes lineaGral {
   0% {
